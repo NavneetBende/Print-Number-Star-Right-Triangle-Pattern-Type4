@@ -1,0 +1,29 @@
+[code language=”cpp”]
+#include<stdio.h>           /*Importing standard stdio.h library in order to use printf(), scanf() etc */
+#include<conio.h>           /*Importing standard conio. library in order to use clrscr() etc */
+void main()                 /* Beginning of the code (main block)*/
+
+{
+
+int N,i,j,a=1;        /*Integer variables declared N for number of lines. i, j, for loops, a for answer.*/
+clrscr();               /*clears the screen */
+
+printf("Enter the N value (number of lines):");     
+/* Indicating the user to give N value */
+
+scanf("%d",&N);          /*receiving the input from user using scanf() */
+
+for(i=1;i<=N;i++) {     /*Starting of i loop indicating number of lines in the output from 1 to N*/
+
+a=(i*(i+1))/2;              /*skipping the value of a by N value, as the digits need to be printed in -reverse*/
+
+for(j=1;j<i;j++) {      /*starting of j loop for printing digits in a particular line*/
+
+printf("%d*",a–);     /*printing the value in a(except the last digit in each line  with * and post- decrementing it,*/
+
+}
+
+printf("%d\n",a–);   /*Printing the last digit in each line without * and going to next line */
+
+}
+}
